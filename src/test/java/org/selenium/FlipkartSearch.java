@@ -19,7 +19,7 @@ public class FlipkartSearch {
 
          List<WebElement> listOfProducts = driver.findElements(By.xpath("//div[@class='KzDlHZ']"));
          List<WebElement> listOfProductPrice = driver.findElements(By.xpath("//div[@class='Nx9bqj _4b5DiR']"));
-         for(int i=0;i<listOfProducts.size()-1;i++){
+         for(int i=0;i<listOfProducts.size();i++){
              System.out.println("Product Name : " + listOfProducts.get(i).getText() + "," + "Price :" + listOfProductPrice.get(i).getText());
          }
      }
